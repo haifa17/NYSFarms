@@ -11,7 +11,7 @@ export default function Navigation() {
   return (
     <header className="fixed w-full top-0 z-50 bg-red-900 backdrop-blur-sm ">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
-        <Link href="/"  className='w-52 -ml-18'>
+        <Link href="/"  className='w-52 -ml-5 sm:-ml-18'>
         <img src="/NYSLOGO_white_transparent.png" className=''/>
         </Link>
         
@@ -32,7 +32,7 @@ export default function Navigation() {
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
         >
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
+          {isOpen ? <X size={24} /> : <Menu className='text-white' size={24} />}
         </button>
       </nav>
 
